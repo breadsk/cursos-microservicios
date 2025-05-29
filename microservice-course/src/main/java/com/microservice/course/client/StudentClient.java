@@ -12,7 +12,7 @@ import java.util.List;
 public interface StudentClient {
 
     
-    @GetMapping("/api/v1/student/search-by-course/{courseId}")    
+    @GetMapping("/api/v1/student/search-by-course/{courseId}")
     List<StudentDTO> findAllStudentByCourse(@PathVariable Long courseId);
 
 }

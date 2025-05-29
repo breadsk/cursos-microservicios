@@ -16,9 +16,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 
 
-
-
-
 @RestController
 @RequestMapping("/api/v1/student")
 public class StudentController {
@@ -47,8 +44,7 @@ public class StudentController {
 
     //localhost:8090/api/v1/student/search-by-course/1
     @GetMapping("/search-by-course/{courseId}")
-    public ResponseEntity<?> findByIdCourse(@PathVariable Long courseId){
-         System.out.println("-------------------------------------------------------------------"+ courseId);
+    public ResponseEntity<?> findByIdCourse(@PathVariable Long courseId){         
          return ResponseEntity.ok(iStudentService.findByIdCourse(courseId));
     }
 

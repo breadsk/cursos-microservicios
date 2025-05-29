@@ -1,7 +1,5 @@
 package com.microservice.course.dto;
 
-
-
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.Builder;

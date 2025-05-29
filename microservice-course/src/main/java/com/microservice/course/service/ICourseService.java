@@ -14,4 +14,6 @@ public interface ICourseService {
     void save(Course course);
 
     StudentByCourseResponse findStudentsByIdCourse(Long idCourse);
+
+    void deleteById(Long id);
 }

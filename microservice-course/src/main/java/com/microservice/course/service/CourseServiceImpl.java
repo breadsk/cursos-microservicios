@@ -36,6 +36,11 @@ public class CourseServiceImpl implements ICourseService{
     }
 
     @Override
+    public void deleteById(Long id){
+        iCourseRepository.deleteById(id);
+    }
+
+    @Override
     public StudentByCourseResponse findStudentsByIdCourse(Long idCourse){
 
 
