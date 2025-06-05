@@ -42,8 +42,6 @@ public class CourseServiceImpl implements ICourseService{
 
     @Override
     public StudentByCourseResponse findStudentsByIdCourse(Long idCourse){
-
-
         //Consultar el curso
         //Porque devuelve un optional
         Course course = iCourseRepository.findById(idCourse).orElse(new Course());
